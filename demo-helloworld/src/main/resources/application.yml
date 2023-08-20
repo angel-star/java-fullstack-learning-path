@@ -1,4 +1,13 @@
+#spring.http.encoding.charset=UTF-8
+#spring.http.encoding.force=true
+
+
 server:
   port: 8081
   servlet:
     context-path: /demo
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
