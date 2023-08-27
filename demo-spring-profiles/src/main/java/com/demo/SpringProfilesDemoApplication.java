@@ -14,11 +14,28 @@ public class SpringProfilesDemoApplication {
     private String message;
 
     public static void main(String[] args) {
+
         SpringApplication.run(SpringProfilesDemoApplication.class, args);
     }
 
     @GetMapping("/")
     public String getMessage() {
         return message;
+    }
+
+    //get app.name
+    @Value("${app.name}")
+    private String name;
+    @GetMapping("/name")
+    public String getName() {
+        return name;
+    }
+
+    //get app.description
+    @Value("${app.description}")
+    private String description;
+    @GetMapping("/description")
+    public String getDescription() {
+        return description;
     }
 }
