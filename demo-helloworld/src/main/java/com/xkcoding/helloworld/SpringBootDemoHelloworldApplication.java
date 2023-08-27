@@ -34,7 +34,7 @@ public class SpringBootDemoHelloworldApplication {
         if (StrUtil.isBlank(who)) {
             who = "World";
         }
-        return StrUtil.format("Hello, {}!", who);
+        return StrUtil.format("Hello新新新113, {}!", who);
     }
     // 处理 POST 请求，例如创建一个新的“问候”
     @ApiOperation(value = "创建一个新的“问候”", notes = "利用@RequestBody 创建一个新的“问候”")
