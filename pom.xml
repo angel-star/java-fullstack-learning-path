@@ -7,8 +7,15 @@
   <groupId>com.xkcoding</groupId>
   <artifactId>spring-boot-demo</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+<!--  Q:这个地方我们没有 遗漏一个module，会发生什么情况-->
+<!--  A:会导致这个项目，无法正常运行，因为，我们没有指定要执行的module-->
+<!--  Q:如果我们没有指定要执行的module，那么maven会怎么处理-->
+<!--  A:会默认执行当前pom.xml所在目录的module-->
+<!--  Q:如果我们指定了要执行的module，那么maven会怎么处理-->
+<!--  A:会执行指定的module-->
   <modules>
     <module>demo-helloworld</module>
+    <module>demo-spring-profiles</module>
 <!--    <module>demo-properties</module>-->
 <!--    <module>demo-actuator</module>-->
 <!--    <module>demo-admin</module>-->
